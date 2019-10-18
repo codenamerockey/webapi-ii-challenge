@@ -9,7 +9,7 @@ server.use('/api/posts', postRoutes);
 
 server.get('/', (req, res) => {
   res.send(
-    `<h3>https://webapi2postgres.herokuapp.com</h3>, https://webapi2postgres.herokuapp.com/api/posts gives you all posts</h3>`
+    `<h3>https://webapi2postgres.herokuapp.com</h3>, <h3>https://webapi2postgres.herokuapp.com/api/posts</h3> : gives you all posts</h3>`
   );
 });
 
