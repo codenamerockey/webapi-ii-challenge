@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 const postRoutes = require('./postRouter/postRouter'); //imports routes
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 server.use(express.json());
 server.use('/api/posts', postRoutes);

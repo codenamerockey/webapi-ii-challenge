@@ -10,8 +10,18 @@ module.exports = {
     },
     migrations: {
       directory: './data/migrations',
-      tableName: 'dbmigrations',
+      tableName: 'dbmigrations'
     },
-    seeds: { directory: './data/seeds' },
+    seeds: { directory: './data/seeds' }
   },
+
+  production: {
+    client: 'pg',
+    connection: process.env,
+    useNullAsDefault: true,
+    migrations: {
+      directory: './data/migrations'
+    },
+    seeds: { directory: './data/seeds' }
+  }
 };
